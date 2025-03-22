@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Sangre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Banco de Sangre</h1>
+        <p>Donar sangre es regalar vida ❤️</p>
+    </header>
+
+    <section class="busqueda">
+        <label for="buscarSangre">Buscar por tipo de sangre:</label>
+        <select id="buscarSangre">
+            <option value="">Selecciona un tipo</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+    </section>
+
+    <section class="lista">
+        <h2>Lista de Donantes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Teléfono</th>
+                    <th>Tipo de Sangre</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDonantes"></tbody>
+        </table>
+    </section>
+
+    <!-- Sección para reporte de errores -->
+    <section class="contacto">
+        <h2>¿Encontraste un error?</h2>
+        <p>Si encuentras algún error en la información o en la página, por favor contáctanos al correo: 
+            <a href="mailto:paulfchomina@icloud.com?subject=Reporte de Error en Banco de Sangre">paulfchomina@icloud.com</a>
+        </p>
+    </section>
+    
+    <!-- Sección para agregar donantes -->
+    <section class="registro">
+        <h2>Agregarse como Donante</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="edad" placeholder="Edad">
+        <input type="tel" id="telefono" placeholder="Teléfono">
+        <select id="tipoSangre">
+            <option value="">Selecciona tu tipo de sangre</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        <select id="ubicacion">
+            <option value="">Selecciona tu ubicación</option>
+            <option value="Hermosillo">Hermosillo</option>
+            <option value="Caborca">Caborca</option>
+            <option value="Nogales">Nogales</option>
+            <option value="Obregón">Obregón</option>
+        </select>
+        <button onclick="agregarDonante()">Registrarse</button>
+    </section>
+
+    <footer>
+        <p>Esta página fue creada sin fines de lucro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
