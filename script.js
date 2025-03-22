@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         { nombre: "David Aguilar", edad: 29, telefono: "662-678-9012", tipoSangre: "O+", ubicacion: "Hermosillo" },
         { nombre: "Beatriz Salazar", edad: 37, telefono: "662-789-0123", tipoSangre: "AB-", ubicacion: "Agua Prieta" },
         { nombre: "Miguel Esquivel", edad: 33, telefono: "662-890-1234", tipoSangre: "B-", ubicacion: "Hermosillo" },
-        { nombre: "Norma Pacheco", edad: 28, telefono: "662-901-2345", tipoSangre: "O+", ubicacion: "Caborca" }
+        { nombre: "Norma Pacheco", edad: 28, telefono: "662-901-2345", tipoSangre: "O+", ubicacion: "Caborca" },
+        { nombre: "Paul Chomina", edad: 15, telefono: "662-199-2030", tipoSangre: "A+", ubicacion: "Hermosillo" }
     ];
 
     // Mostrar los donantes en la tabla
